@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/df35dedcdb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="website-header">
+      <img src="https://png.pngtree.com/element_our/sm/20180516/sm_5afc4cd0dcaca.jpg" alt="logo">
+      <h1>NEWS TODAY</h1>
+      <div class="social-icon">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fas fa-rss"></i>
+
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-md ">
+
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">POLITICS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">WORLD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SPORTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TECHNOLOGY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">VIDEO</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="breking-news-section">
+      <span id="btext">Breaking News</span>
+      <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+        <a href="#" class="breaking-news">
+          <p class="bntime"> 2 March 2020</p>
+          PayPal enable transfer of digital currency currencies to external wallets
+        </a>
+        <a href="#" class="breaking-news">
+          <p class="bntime"> March. 1, 2023,</p>
+          Italian Parliament Approves 26% Crypto-Gains Tax in 2023 Budget
+        </a>
+        <a href="#" class="breaking-news">
+          <p class="bntime">March. 3, 2023</p>
+          Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC
+        </a>
+      </marquee>
+    </div>
+
+  </header>
+  <!--Main section-->
+  <main>
+    <article id="popular-news">
+      <div id="featured">
+        <h2>FEATURED</h2>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.financemagnates.com/wp-content/uploads/2020/06/thumbnail_paypal-crypto.jpg"
+                class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>PayPal</h5>
+                <p>PayPal enable transfer of digital currency
+                  currencies to external wallets.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://static1.bigstockphoto.com/8/2/2/large2/228177100.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Crypto-Gains</h5>
+                <p>Italian Parliament Approves 26% Crypto-Gains Tax in 2023 Budget</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.newsbtc.com/wp-content/uploads/2022/06/MicroStrategy-1140x641.jpeg"
+                class="d-block w-100" alt="..." style="width: 40%;">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Microstrategy</h5>
+                <p> Microstrategy Buys More Bitcoin — Company's Crypto Holdings Grow to 132,500 BTC</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="latest">
+        <h2>LATEST</h2>
+        <section class="news">
+          <div class="news-container">
+            <img src="https://www.aljazeera.com/wp-content/uploads/2021/05/bitcoin.jpg?resize=770%2C513&quality=80"
+              alt="">
+            <p class="popular-news-text">
+              Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022
+            </p>
+          </div>
+        </section>
+        <section class="news">
+          <div class="news-container">
+            <img
+              src="https://www.cryptonewsz.com/wp-content/uploads/2022/12/Mango-Markets-Exploiter-Arrested-In-Puerto-Rico.jpg"
+              alt="">
+            <p class="popular-news-text">
+              Mango Markets Exploiter Eisenberg Arrested in Puerto Rico
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="our-picks">
+        <H2>OUR-PICKS</H2>
+        <section class="news">
+          <div class="news-container">
+            <img src="https://www.aljazeera.com/wp-content/uploads/2021/05/bitcoin.jpg?resize=770%2C513&quality=80"
+              alt="">
+
+            <p class="popular-news-text">
+              Bitcoin Miners’ Revenue Hits $9.55 Billion in 2022
+            </p>
+
+          </div>
+        </section>
+        <section class="news">
+          <div class="news-container">
+            <img
+              src="https://www.cryptonewsz.com/wp-content/uploads/2022/12/Mango-Markets-Exploiter-Arrested-In-Puerto-Rico.jpg"
+              alt="">
+            <p class="popular-news-text">
+              Mango Markets Exploiter Eisenberg Arrested in Puerto Rico
+            </p>
+          </div>
+        </section>
+      </div>
+    </article>
+    <section class="more-news">
+      <div class="news-section">
+        <artical class="world">
+          <h2>WORLD</h2>
+          <img src="https://www.financemagnates.com/wp-content/uploads/2020/06/thumbnail_paypal-crypto.jpg ">
+          <h3>PayPal enable transfer of digital currency currencies to external wallets</h3>
+          <p>The move comes after nearly two years since PayPal enabled users to buy and sell crypto on its platform.
+            After rolling out the ability to buy and sell crypto on its platform in October 2020, PayPal is finally
+            allowing users
+            the ability to natively transfer, send and receive digital assets between PayPal and other wallets and
+            exchanges.
+            As of Tuesday, the feature is available to select U.S. users, with the feature expanding to all eligible
+            U.S. users in
+            the coming weeks. The first batch of supported coins consists of Bitcoin .
+            BTC $16,704, Ether ETH $1,217, Bitcoin Cash BCH $100, and Litecoin LTC $74.58.
+            In addition, customers who transfer their crypto onto PayPal can spend it via Checkout at millions of
+            merchant
+            terminals. The company has been granted a full Bitlicense by the New York Department of Financial Services
+            for
+            the conduct.
+            Users would simply need to log in to know their accounts and enter the crypto section of the application to
+            start
+            transferring coins. Users are generally required to complete a one-time ID verification before the
+            procedure.
+            Crypto transfers to recipients outside of PayPal would incur a network fee based on their respective
+            blockchains, but transfers between PayPal users will not incur such fees. To protect users' privacy, the
+            firm
+            generates a new recipient address for each transaction into one's PayPal account. PayPal will also not
+            charge
+            fees for incoming transfers,
+            The company is also working to integrate other forms of cryptocurrency services, such as central bank
+            digital
+            currencies, to boost its digital footprint. It is also exploring the possibility of launching its own
+            stablecoin,
+            dubbed "PayPal Coin." The discovery came after a developer found evidence of such a stablecoin within the
+            source code of the company's iPhone app.
+          </p>
+
+        </artical>
+        <artical class="Microstrategy">
+          <h2>Microstrategy</h2>
+          <img src="https://www.newsbtc.com/wp-content/uploads/2022/06/MicroStrategy-1140x641.jpeg">
+          <p>Nasdaq-listed Microstrategy Inc. announced Wednesday that it has purchased more bitcoin for its corporate
+            treasury. Michael Saylor, the company’s founder and executive chairman, tweeted Wednesday:
+            Microstrategy has increased its bitcoin holdings by ~2,500 BTC. As of 12/27/22 Microstrategy holds ~132,500
+            bitcoin acquired for ~$4.03 billion at an average price of ~$30,397 per bitcoin.
+            In its filing with the U.S. Securities and Exchange Commission (SEC), Microstrategy clarified that the 2,500
+            coins
+            were acquired between Nov. 1 and Dec. 24 by its wholly owned subsidiary Macrostrategy.
+            The subsidiary bought approximately 2,395 BTC at an average price of $17,871 per coin between Nov. 1 and
+            Dec. 21. It then sold about 704 BTC at $16,776 per coin on Dec. 22. Macrostrategy then bought about 810 more
+            BTC at $16,845 per coin on Dec. 24. At the time of writing, bitcoin is trading at $16,656.80.
+            The bitcoin sale in December marked the first time Microstrategy sold its bitcoin since it began
+            accumulating
+            the crypto for its corporate treasury in 2020. The company cited tax reasons for selling BTC. “Microstrategy
+            plans to carry back the capital losses resulting from this transaction against previous capital gains, to
+            the extent
+            such carrybacks are available under the federal income tax laws currently in effect, which may generate a
+            tax
+            benefit,” the SEC filing describes.
+            Saylor said in an interview last week:
+            The most positive thing of the year is
+            the emergence of bitcoin as the institutional grade digital asset and the clarity that … there is one crypto
+            asset
+            that’s a digital commodity … Bitcoin is that commodity.
+            The executive noted that both the chairman of the SEC and the chair of the Commodity Futures Trading
+            Commission (CFTC) have confirmed that bitcoin is a commodity.
+            Saylor previously explained that Microstrategy is investing in BTC “for the long term.” He added: “Our
+            strategy is
+            to buy bitcoin and hold the bitcoin, so there’s no price target … I expect bitcoin is going to go into the
+            millions.
+            So, we’re very patient. We think it’s the future of money.”</p>
+        </artical>
+      </div>
+      <aside>
+        <h4>RECENT</h4>
+        <div class="resent-news">
+          <img
+            src="https://www.cryptonewsz.com/wp-content/uploads/2022/12/Mango-Markets-Exploiter-Arrested-In-Puerto-Rico.jpg">
+          <p> Mango Markets Exploiter Eisenberg Arrested in Puerto Rico</p>
+        </div>
+        <div class="resent-news">
+          <img src="https://www.aljazeera.com/wp-content/uploads/2021/05/bitcoin.jpg?resize=770%2C513&quality=80">
+          <p> Mango Markets Exploiter Eisenberg Arrested in Puerto Rico</p>
+        </div>
+        <div class="resent-news">
+          <img
+            src="https://www.cryptonewsz.com/wp-content/uploads/2022/12/Mango-Markets-Exploiter-Arrested-In-Puerto-Rico.jpg">
+          <p> Mango Markets Exploiter Eisenberg Arrested in Puerto Rico</p>
+        </div>
+        <div class="resent-news">
+          <img src="https://www.aljazeera.com/wp-content/uploads/2021/05/bitcoin.jpg?resize=770%2C513&quality=80">
+          <p> Mango Markets Exploiter Eisenberg Arrested in Puerto Rico</p>
+        </div>
+        <div class="resent-news">
+          <img src="https://static1.bigstockphoto.com/8/2/2/large2/228177100.jpg">
+          <p> Italian Parliament Approves 26% Crypto-Gains Tax in 2023 Budget</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <footer>
+    <div class="social-links">
+      <section class="about">
+        <h1>ABOUT</h1>
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium ex ab distinctio tempore
+          blanditiis natus optio error cum iusto.</h2>
+        <div class="social-icons-footer">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-google-plus-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fas fa-rss-square"></i>
+
+        </div>
+      </section>
+      <section class="instagram">
+        <div class="social-icons-footer">
+          <i class="fab fa-instagram"></i>
+          <button type="button" class="footer-button">FOLLOW US</button>
+        </div>
+
+      </section>
+      <section class="subsribe">
+        <h2>SUBSCRIBE TO NEWS TODAY</h2>
+        <P>Enter Your Email Address To Subscribe To This blogs</P>
+        <input type="email" placeholder="enter email id">
+        <button type="button" class="footer-button">SUBSCRIBE</button>
+      </section>
+      
+    </div>
+  </footer>
+
+
+
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
