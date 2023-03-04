@@ -1,0 +1,267 @@
+:root{
+    --colorBrown:red;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: black;
+    color: white;
+
+}
+.website-header{
+     padding: 20px;
+     height: 80px;
+     display: flex;
+     /* flex-wrap: wrap; */
+}
+.website-header img{
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+}
+.website-header h1{
+    margin: auto 0;
+}
+.social-icon{
+    text-align: right;
+    flex-grow: 1;
+}
+.social-icon i{
+    margin: 0 7px;
+    cursor:pointer;
+}
+nav{
+    background-color: black;
+    height: 50px;
+    margin-bottom: 20px;
+}
+nav ul{
+    margin: 20px 0 0 0;
+}
+.navbar-nav li{
+    padding: 20px 10px;
+}
+.navbar-nav a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.navbar-nav a:hover{
+    color:var( --colorBrown);
+    
+}
+.breking-news-section{
+    padding: 0 30px 0 60px;
+    display: flex;
+    height: 30px;
+}
+
+#btext{
+    width: 200px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--colorBrown);
+    font-weight: 600;
+    margin: auto 0;
+
+}
+.breaking-news{
+    padding: 0 30px;
+    color: white;
+    font-weight: 800;
+    display: inline-block;
+}
+.breaking-news:hover, .social-icon i:hover{
+    color: var(--colorBrown);
+    cursor: pointer;
+}
+.bntime{
+    display: inline-block;
+    color: gray;
+    padding: 0 10px;
+    font-size: 12px;
+}
+#popular-news{
+    display: flex;
+    margin: 30px 5%;
+    color: black;
+    /* flex-wrap: wrap; */
+    
+}
+#popular-news img{
+    width: 100%;
+   
+    filter: brightness(0.7);
+}
+#popular-news h2{
+    margin: 0;
+    padding: 5px;
+    color:white;
+}
+#featured p,h5{
+     color: black;
+}
+
+
+.latest, .our-picks, .news img{
+    width: 20%;
+}
+
+#featured h2{
+    background-color: black;
+}
+.latest h2{
+    background-color: black;
+}
+.our-picks h2{
+    background-color: black;
+}
+ .popular-news-text{
+         /* color: black; */
+         /* bottom: 20px;  */
+          /* z-index: 2; */
+         /* position: absolute; */
+         font-size: 14px;
+         font-weight: bolder;
+         padding: 0 10px;
+         transition-duration: 500ms;
+
+}  
+#feactured{
+    flex: 3;
+}
+#latest, #our-picks{
+    flex: 30;
+}
+.news-container:hover{
+    cursor: pointer;
+}
+.news-container:hover > .popular-news-text{
+    bottom: 2px;
+
+}
+.more-news{
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: black;
+    justify-content: space-around;
+    color: white;
+    padding: 0 5%;
+    text-align: justify;
+}
+.more-news img{
+    width: 100%;
+}
+.news-section{
+    display: flex;
+    /* flex-wrap:wrap ; */
+    flex-basis: 70%;
+    justify-content: space-between;
+}
+aside{
+    flex-basis: 35%;
+    padding: 10px;
+    border: 1px solid white;
+    
+    /* margin: auto 0; */
+    border-radius: 5px;
+}
+.world, .Microstrategy{
+    flex-basis: 45%;
+
+}
+.world h2{
+    background-color: red;
+    padding: 0 10px;
+    margin: 10px 0 0 0;
+}
+.Microstrategy h2{
+    background-color: blue;
+    padding: 0 10px;
+    margin: 10px 0 0 0;
+}
+.resent-news{
+    display: flex;
+    margin-left : 10px;
+}
+.resent-news img{
+    width: 80%;
+    height: 80%;
+    margin: 5px;
+}
+.resent-news p{
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto;
+}
+.social-links{
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding: 5%;
+    justify-content: space-between;
+}
+.social-links section{
+    flex-basis: 30%;
+}
+.social-icons-footer i{
+     font-size: 37px;
+     padding: 5px;
+}
+.footer-button{
+    display: block;
+    border: 1px solid blue;
+    color:blue;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    margin: 20px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+.footer-button:hover{
+    color: white;
+    background-color: blue;
+
+}
+ 
+@media only screen and (max-width:600px){
+    .website-header img{
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+
+    }
+    .website-header h1{
+        font-size:15px;
+
+    }
+    .breaking-news-section{
+        padding: 10px;
+        flex-wrap: wrap;
+        height: 50px;
+
+    }
+    .navbar-collapse{
+          background-color: black;
+          z-index: 16;
+    }
+    #featured{
+        flex: auto;
+
+    }
+    .news-section, aside img, .world, .Microstrategy .social-links section{
+        flex-basis: 100%;
+        flex-wrap: wrap;
+
+    }
+    .social-links section{
+        padding: 15px 0;
+    }
+    aside{
+        border-width: 0;
+
+    }
+}
